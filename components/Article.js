@@ -161,7 +161,8 @@ const article = document.querySelector(".articles")
 
   // Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
 
-const newArticle = {
+const newArticles = [
+{ 
   title: 'Zombies!',
   date: 'August 4, 2020',
   firstParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.` ,
@@ -169,9 +170,21 @@ const newArticle = {
   secondParagraph: `Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.`,
 
   thirdParagraph: `The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.`
-}
+},
+{
+  title: 'Pokemon!',
+  date: 'August 1, 2020',
+  firstParagraph: `Pokem ipsum dolor sit amet Exeggutor Kecleon Wing Attack Doduo Red Unown. Sunt in culpa Drilbur Calcium Hoenn Shieldon Wynaut Charizard. Growl Venonat Scolipede Espeon Charizard Barboach Hidden Machine. Duis aute irure dolor in reprehenderit in voluptate they're comfy and easy to wear Onix what kind of Pokemon are you Fog Badge Ampharos Noctowl. Pewter City Marill Slakoth Bronzong Rattata Treecko Cottonee.` ,
 
-data.push(newArticle);
+  secondParagraph: `Pokem ipsum dolor sit amet Exeggutor Kecleon Wing Attack Doduo Red Unown. Sunt in culpa Drilbur Calcium Hoenn Shieldon Wynaut Charizard. Growl Venonat Scolipede Espeon Charizard Barboach Hidden Machine. Duis aute irure dolor in reprehenderit in voluptate they're comfy and easy to wear Onix what kind of Pokemon are you Fog Badge Ampharos Noctowl. Pewter City Marill Slakoth Bronzong Rattata Treecko Cottonee.`,
+
+  thirdParagraph: `Pokem ipsum dolor sit amet Exeggutor Kecleon Wing Attack Doduo Red Unown. Sunt in culpa Drilbur Calcium Hoenn Shieldon Wynaut Charizard. Growl Venonat Scolipede Espeon Charizard Barboach Hidden Machine. Duis aute irure dolor in reprehenderit in voluptate they're comfy and easy to wear Onix what kind of Pokemon are you Fog Badge Ampharos Noctowl. Pewter City Marill Slakoth Bronzong Rattata Treecko Cottonee.`
+}
+]
+
+newArticles.forEach(ele => {
+  data.push(ele);
+})
 
 data.forEach(ele => {
   article.appendChild(articleMaker(ele))
