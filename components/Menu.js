@@ -39,7 +39,7 @@ const menuMaker = items => {
 
     const menuButton = document.querySelector(".menu-button");
     menuButton.addEventListener("click", event => {
-      menu.classList.add("menu-open")
+      menu.classList.add("menu--open")
     })
 
     return menu;
