@@ -23,6 +23,18 @@ let menuItems = [
 
 
 const menuMaker = items => {
+    const menu = document.createElement("div");
+    menu.classList.add("menu");
+
+    const menuList = document.createElement("ul");
+
+    items.forEach(ele => {
+      const li = document.createElement("li");
+      li.textContent = ele;
+      menuList.appendChild(li);
+    })
+
+    menu.appendChild(menuList)
 
 }
 
