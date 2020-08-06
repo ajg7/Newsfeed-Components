@@ -36,9 +36,17 @@ const menuMaker = items => {
 
     menu.appendChild(menuList)
 
+
+    const menuButton = document.querySelector(".menu-button");
+    menuButton.addEventListener("click", event => {
+      menu.classList.add("menu-open")
+    })
+
+    return menu;
 }
 
-
+const header = document.querySelector(".header");
+header.appendChild(menuMaker(menuItems))
 
   // Step 2: Inside the function, iterate over the array creating a list item <li> element for each item in the array.
   // Add those items to the <ul>
